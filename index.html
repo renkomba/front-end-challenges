@@ -15,55 +15,45 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
+
+<script src="main.js" defer></script>
+
 <body>
-
-  <!-- Rating state start -->
-
   <article>
-
     <section id="front">
       <div class="circle">
         <i class="fa-solid fa-star"></i>
       </div>
 
-      <h1>How did we do?</h1>
+      <h2>How did we do?</h2>
 
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-      <div>
-        <span class="circle num">1</span>
-        <span class="circle num">2</span>
-        <span class="circle num">3</span>
-        <span class="circle num">4</span>
-        <span class="circle num">5</span>
+      <div class="nums">
+        <span class="circle">1</span>
+        <span class="circle">2</span>
+        <span class="circle">3</span>
+        <span class="circle">4</span>
+        <span class="circle">5</span>
       </div>
 
-      <button>Submit</button>
+      <button type="submit">SUBMIT</button>
     </section>
 
-    <section>
+    <section id="back">
+      <img src="images/illustration-thank-you.svg" alt="grey smartphone with paper coming out from the screen and an orange credit card">
 
+      <span class="selections">You selected <span data-num-selections="0">__</span> out of 5</span>
+
+      <h2>Thank you!</h2>
+
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
     </section>
-
   </article>
 
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Edding N' R.</a>.
   </div>
 </body>
 </html>
