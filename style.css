@@ -1,0 +1,139 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --grey-light: hsl(217, 12%, 63%);
+    --grey-medium: hsl(216, 12%, 54%);
+    --blue-dark: hsl(213, 19%, 18%);
+    --blue-very-dark: hsl(216, 12%, 8%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* display: grid; */
+    background-color: var(--blue-very-dark);
+    color: var(--grey-light);
+    font-family: Overpass;
+    font-size: 15px;
+    margin: 0;
+}
+
+h2 {
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+article {
+    background-color: var(--blue-dark);
+    border-radius: 10px;
+    margin: 1.5rem;
+}
+
+section {
+    display: grid;
+    /* margin: 1.5rem; */
+    padding: 1.5rem;
+}
+
+i {
+    color: var(--orange);
+    padding: 1rem;
+}
+
+
+.nums {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.nums > span {
+    padding: .75rem 1.25rem;
+}
+
+.nums > span:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    animation-name: bounce-down, bounce;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 1em;
+    border-radius: 20px;
+    border: none;
+}
+
+button:active,
+.nums > .circle:active {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+button:hover i {
+    animation: spin 2.5s linear infinite;
+}
+
+.circle {
+    background-color: var(--blue-very-dark);
+    border-radius: 100%;
+    width: fit-content;
+}
+
+#back {
+    justify-items: center;
+}
+
+.selections {
+    color: var(--orange);
+    padding: .5rem .75rem;
+    border-radius: 20px;
+    background-color: var(--blue-very-dark);
+}
+
+.active {
+    background-color: var(--grey-light);
+    color: var(--white);
+}
+
+#back > p {
+    text-align: center;
+}
+
+#back {
+    display: none;
+}
+
+@keyframes spin {
+    to {transform: rotate(360deg);}
+}
+
+@keyframes bounce {
+    from { transform: translateY(8px); }
+    50% { transform: translateY(4px); }
+    to { transform: translateY(8px); }
+}
+
+@keyframes bounce-down {
+    to { transform: translateY(8px);}
+}
+
+
+@media only screen and (min-width: 375px) {
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    
+}
